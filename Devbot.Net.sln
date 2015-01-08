@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.22310.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devbot.Net.Web", "Devbot.Net.Web\Devbot.Net.Web.kproj", "{E00A62AD-F1A7-4B92-8504-45CECB4BE6AA}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devbot.Net.Web", "src\Devbot.Net.Web\Devbot.Net.Web.kproj", "{E00A62AD-F1A7-4B92-8504-45CECB4BE6AA}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devbot.Net.Identity", "Devbot.Net.Identity\Devbot.Net.Identity.kproj", "{F63E7BAB-243A-4977-861D-B8900E9853C3}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devbot.Net.Identity", "src\Devbot.Net.Identity\Devbot.Net.Identity.kproj", "{F63E7BAB-243A-4977-861D-B8900E9853C3}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devbot.Net.Web.Helpers", "Devbot.Net.Web.Helpers\Devbot.Net.Web.Helpers.kproj", "{01042222-C350-4E15-9A25-677C9E180F0B}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Devbot.Net.Web.Helpers", "src\Devbot.Net.Web.Helpers\Devbot.Net.Web.Helpers.kproj", "{01042222-C350-4E15-9A25-677C9E180F0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
