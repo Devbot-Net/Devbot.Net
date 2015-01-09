@@ -6,7 +6,7 @@
 #   - Section names should be unique on each level.
 
 # version format
-version: 1.0.{build}  
+version: 1.0.{build}
 
 # scripts that run after cloning repository
 install:
@@ -14,7 +14,7 @@ install:
   #- ps: Write-Host 'This is PowerShell'
   # batch commands start from cmd:
   - cmd: call deploy
-	
+
 # enable patching of AssemblyInfo.* files
 assembly_info:
   patch: true
