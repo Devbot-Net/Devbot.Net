@@ -8,13 +8,6 @@
 # version format
 version: 1.0.{build}
 
-# scripts that run after cloning repository
-install:
-  # to run script as a PowerShell command prepend it with ps:
-  #- ps: Write-Host 'This is PowerShell'
-  # batch commands start from cmd:
-  - cmd: call deploy
-
 # enable patching of AssemblyInfo.* files
 assembly_info:
   patch: true
@@ -22,3 +15,7 @@ assembly_info:
   assembly_version: "0.0.{build}"
   assembly_file_version: "{version}"
   assembly_informational_version: "{version}"
+
+# to run your custom scripts instead of automatic MSBuild
+build_script:
+  cmd: call deply
