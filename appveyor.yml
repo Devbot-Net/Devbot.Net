@@ -20,9 +20,6 @@ assembly_info:
 build_script:
   cmd: call deploy
 
-artifacts:
-  - path: artifacts\publish
-
 deploy:
   - provider: FTP
     protocol: ftp
@@ -31,5 +28,5 @@ deploy:
     password:
       secure: 2cwisR87yFKNSAO1zhyrJQ==
     folder:
-    application:
     active_mode: false
+    artifact: artifacts\publish
