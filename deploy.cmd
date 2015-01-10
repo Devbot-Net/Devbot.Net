@@ -99,7 +99,7 @@ call kvm install %KRE_VERSION% -%KRE_ARCH% -r %KRE_CLR%
 IF !ERRORLEVEL! NEQ 0 goto error
  
 :: 2. Run KPM Restore
-call :ExecuteCmd PowerShell -NoProfile -NoLogo -ExecutionPolicy unrestricted -Command "[System.Threading.Thread]::CurrentThread.CurrentCulture = ''; [System.Threading.Thread]::CurrentThread.CurrentUICulture = '';& 'kpm' %*" restore %ProjectJsonFile% --source %SCM_KRE_NUGET_API_URL% --source https://nuget.org/api/v2/
+call :ExecuteCmd PowerShell -NoProfile -NoLogo -ExecutionPolicy unrestricted -Command "[System.Threading.Thread]::CurrentThread.CurrentCulture = ''; [System.Threading.Thread]::CurrentThread.CurrentUICulture = '';& 'kpm' %*" restore %ProjectJsonFile% --source https://nuget.org/api/v2/
 IF !ERRORLEVEL! NEQ 0 goto error
  
 :: 3. Run KPM Pack
