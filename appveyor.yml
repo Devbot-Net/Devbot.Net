@@ -30,6 +30,6 @@ deploy:
     username: web.deployments
     password:
       secure: 2cwisR87yFKNSAO1zhyrJQ==
-    folder: devbot.net
+    folder:
     application:
     active_mode: false
