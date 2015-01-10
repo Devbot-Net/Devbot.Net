@@ -26,7 +26,7 @@ IF %ERRORLEVEL% NEQ 0 (
 setlocal enabledelayedexpansion
  
 IF NOT DEFINED DEPLOYMENT_TEMP (
-  SET ARTIFACTS=%~dp0%..\artifacts
+  SET ARTIFACTS=%~dp0%\artifacts
 ) ELSE (
   SET ARTIFACTS=%HOMEDRIVE%%HOMEPATH%\artifacts
 )

@@ -19,3 +19,17 @@ assembly_info:
 # to run your custom scripts instead of automatic MSBuild
 build_script:
   cmd: call deploy
+
+artifacts:
+  -path: artifacts\publish
+
+deploy:
+  - provider: FTP
+    protocol: ftp
+    host: ftp.devbot.net
+    username: web.deployments
+    password:
+      secure: 2cwisR87yFKNSAO1zhyrJQ==
+    folder: devbot.net
+    application:
+    active_mode: false
