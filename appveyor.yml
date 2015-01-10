@@ -21,7 +21,7 @@ build_script:
   cmd: call deploy
 
 artifacts:
-  -path: artifacts\publish
+  - path: artifacts\publish
 
 deploy:
   - provider: FTP
