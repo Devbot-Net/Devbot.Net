@@ -184,5 +184,4 @@ FakesAssemblies/
 
 # vNext Additions
 src/Devbot.Net.Web/bower_components/
-src/Devbot.Net.Web/wwwroot/lib/
 artifacts
