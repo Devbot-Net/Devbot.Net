@@ -183,5 +183,5 @@ UpgradeLog*.htm
 FakesAssemblies/
 
 # vNext Additions
-Devbot.Net.Web/bower_components/
-Devbot.Net.Web/wwwroot/lib/
+src/Devbot.Net.Web/bower_components/
+src/Devbot.Net.Web/wwwroot/lib/

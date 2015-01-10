@@ -1,3 +1,8 @@
+SET KRE_VERSION=1.0.0-beta1 
+SET KRE_ARCH=amd64
+SET KRE_CLR=CLR
+SET ProjectJsonFile=src\Devbot.Net.Web\project.json
+
 @if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
  
 :: ----------------------
@@ -78,11 +83,6 @@ IF DEFINED CLEAN_LOCAL_DEPLOYMENT_TEMP (
 IF NOT DEFINED MSBUILD_PATH (
   SET MSBUILD_PATH=%WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild.exe
 )
- 
-SET KRE_VERSION=1.0.0-beta1 
-SET KRE_ARCH=amd64
-SET KRE_CLR=CoreCLR
-SET ProjectJsonFile=My.Awesome.DemoApp\project.json
  
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :: Deployment
