@@ -13,10 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		appveyor.yml = appveyor.yml
 		build.cmd = build.cmd
+		build\build.ps1 = build\build.ps1
 		global.json = global.json
-		kvm.cmd = kvm.cmd
-		kvm.ps1 = kvm.ps1
 		LICENSE = LICENSE
+		build\makefile.shade = build\makefile.shade
 		nuget.config = nuget.config
 		README.md = README.md
 	EndProjectSection
