@@ -13,7 +13,7 @@
 [Rr]eleases/
 x64/
 x86/
-build/
+build/*
 bld/
 [Bb]in/
 [Oo]bj/
@@ -185,3 +185,6 @@ FakesAssemblies/
 # vNext Additions
 src/Devbot.Net.Web/bower_components/
 artifacts
+
+# Build Exclusions
+!build/installkvm.ps1
