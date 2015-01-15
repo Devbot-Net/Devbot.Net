@@ -185,6 +185,7 @@ FakesAssemblies/
 # vNext Additions
 src/Devbot.Net.Web/bower_components/
 artifacts
+.nuget
 
 # Build Exclusions
 !build/build.ps1
