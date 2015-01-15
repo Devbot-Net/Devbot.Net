@@ -1,0 +1,8 @@
+{
+  "name": "Devbot.Net.Web",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "grunt-cli": "^0.1.13"
+  }
+}
