@@ -7,7 +7,7 @@ SET KRE_CLR=CLR
 SET PROJECT_PATH=src\Devbot.Net.Identity
 
 :: 2. Install KVM
-Start /w PowerShell -NoProfile -NoLogo -ExecutionPolicy unrestricted -Command "[System.Threading.Thread]::CurrentThread.CurrentCulture = ''; [System.Threading.Thread]::CurrentThread.CurrentUICulture = '';& '%~dp0build\installkvm.ps1' '%~dp0'"
+Start /w PowerShell -NoProfile -NoLogo -ExecutionPolicy unrestricted -Command "[System.Threading.Thread]::CurrentThread.CurrentCulture = ''; [System.Threading.Thread]::CurrentThread.CurrentUICulture = '';& '%~dp0build\build.ps1' '%~dp0'"
 
 :: 3. Install KRE
 SET KRE_HOME=%USERPROFILE%\.kre

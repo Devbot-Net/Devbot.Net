@@ -187,4 +187,4 @@ src/Devbot.Net.Web/bower_components/
 artifacts
 
 # Build Exclusions
-!build/installkvm.ps1
+!build/build.ps1
