@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Devbot.Net.Web.Models.BlogHeading>
+@{ ViewBag.Title = "All blog posts"; }
+
+<div data-bind="foreach: blogHeadings">
+	<div class="post-preview">
+		<a data-bind="attr: { href: url, title: name}">
+			<h2 class="post-title" data-bind="text: title"></h2>
+			<h3 class="post-subtitle" data-bind="text:subTitle"></h3>
+			<p class="post-meta" data-bind="text: publish"></p>
+		</a>
+	</div>
+</div>
+
+@section Scripts
+{
+	<script type="text/javascript" src="~/lib/knockout/knockout.js"></script>
+	<script type="text/javascript">
+
+		function blogs() {
+			var self = this;
+			self.blogHeadings = ko.observableArray();
+		}
+
+		function blogHeading() {
+			var self = this;
+			self.url = ko.observable('#');
+			self.name = ko.observable('Url to Blog');
+			self.title = ko.observable('');
+			self.subTitle = ko.observable('');
+			self.publishDate = ko.observable(new Date());
+			self.publish = ko.computed(function () {
+				return "Publish by Tommy Long on " + this.publishDate().toLocaleDateString();
+			}, this);
+		}
+
+		function applyData(data, viewModel) {
+			for (var i = 0; i < data.length; i++) {
+				var blog = new blogHeading();
+				blog.url(data[i].Url);
+				blog.name(data[i].Name);
+				blog.title(data[i].Title);
+				blog.subTitle(data[i].SubTitle);
+				blog.publishDate(new Date(data[i].PublishDate));
+				viewModel.blogHeadings.push(blog);
+			}
+		}
+
+		$(document).ready(function () {
+			var viewModel = new blogs();
+			ko.applyBindings(viewModel);
+			var data = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));
+			applyData(data, viewModel);
+		});
+
+	</script>
+}

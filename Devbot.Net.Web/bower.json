@@ -1,0 +1,30 @@
+{
+    "name": "bower",
+    "license": "GPL-2.0",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "~3.0.0",
+        "clean-blog": "~1.0.1",
+        "font-awesome": "~4.2.0",
+        "jquery": "~1.10.2",
+        "knockout": "~3.2.0"
+    },
+    "exportsOverride": {
+        "bootstrap": {
+            "js": "dist/js/*.*",
+            "css": "dist/css/*.*",
+            "fonts": "dist/fonts/*.*"
+        },
+        "clean-blog": {
+            "js": "js/clean-blog*.*",
+            "css": "css/clean-blog*.*"
+        },
+        "font-awesome": {
+            "css": "css/*.*",
+            "fonts": "fonts/*.*"
+        },
+        "jquery": {
+            "js": "jquery.{js,min.js,min.map}"
+        }
+    }
+}
