@@ -4,7 +4,6 @@
 SET KRE_VERSION=1.0.0-beta1
 SET KRE_ARCH=x86
 SET KRE_CLR=CLR
-SET PROJECT_PATH=src\Devbot.Net.Identity
 
 @echo off
 cd %~dp0

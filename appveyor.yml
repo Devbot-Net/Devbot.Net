@@ -1,34 +1,12 @@
-#http://www.appveyor.com/docs/appveyor-yml
-# Notes:
-#   - Minimal appveyor.yml file is an empty file. All sections are optional.
-#   - Indent each level of configuration with 2 spaces. Do not use tabs!
-#   - All section names are case-sensitive.
-#   - Section names should be unique on each level.
-
-# version format
 version: 1.0.{build}
-
-# enable patching of AssemblyInfo.* files
 assembly_info:
   patch: true
-  file: AssemblyInfo.*
-  assembly_version: "0.0.{build}"
-  assembly_file_version: "{version}"
-  assembly_informational_version: "{version}"
-
-# to run your custom scripts instead of automatic MSBuild
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
 build_script:
-  cmd: call deploy
-
+- call build
 artifacts:
-  - path: artifacts
-
-deploy:
-  - provider: FTP
-    protocol: ftp
-    host: ftp.devbot.net
-    username: web.deployments
-    password:
-      secure: 2cwisR87yFKNSAO1zhyrJQ==
-    artifact: publish\
-    active_mode: false
+- path: artifacts/build
+deploy: off
