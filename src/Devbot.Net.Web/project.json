@@ -1,6 +1,6 @@
-﻿{
+{
     "webroot": "wwwroot",
-    "version": "1.0.0-*",
+    "version":"1.0.0-*",
     "exclude": [
         "wwwroot"
     ],
@@ -12,11 +12,11 @@
     "dependencies": {
         "Devbot.Net.Identity": "",
         "Devbot.Net.Web.Helpers": "",
-        "Microsoft.AspNet.Diagnostics": "1.0.0-beta1",
-        "Microsoft.AspNet.Mvc": "6.0.0-beta1",
-        "Microsoft.AspNet.Server.IIS": "1.0.0-beta1",
-        "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta1",
-        "Microsoft.Framework.Logging.Console": "1.0.0-beta1",
+        "Microsoft.AspNet.Diagnostics": "1.0.0-beta3-11981",
+        "Microsoft.AspNet.Mvc": "6.0.0-beta3-12431",
+        "Microsoft.AspNet.Server.IIS": "1.0.0-beta3-10912",
+        "Microsoft.Framework.ConfigurationModel.Json": "1.0.0-beta3-10725",
+        "Microsoft.Framework.Logging.Console": "1.0.0-beta3-10734",
         "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-beta1",
         "Newtonsoft.Json": "6.0.6"
     },
